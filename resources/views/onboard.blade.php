@@ -21,7 +21,7 @@
             <a href="" class="hover:text-blue-500">How it Works</a>
             <a href="" class="hover:text-blue-500">Benefits</a>
             <a href="" class="hover:text-blue-500">Testimonial</a>
-            <a href="" class="hover:text-blue-500">Get Started</a>
+            <a href="" class="hover:text-blue-500 bg-blue-500 text-[white] p-[7px_20px] rounded-lg">Login</a>
 
         </nav>
     </header>
