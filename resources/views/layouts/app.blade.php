@@ -18,13 +18,13 @@
                 <h1 class="text-xl font-bold text-blue-600">Invycat</h1>
                 <nav class="mt-6">
                     <ul>
-                        <li class="mb-2"><a href="#" class="text-gray-700 hover:text-blue-500"><i class="fa-solid fa-house mr-[10px] text-gray-600"></i>Dashboard</a></li>
-                        <li class="mb-2"><a href="#" class="text-gray-700 hover:text-blue-500"><i class="fa-solid fa-boxes-stacked mr-[10px] text-gray-600"></i>Products</a></li>
-                        <li class="mb-2"><a href="#" class="text-gray-700 hover:text-blue-500"><i class="fa-solid fa-square-poll-vertical mr-[10px] text-gray-600"></i>Sales</a></li>
+                        <li class="mb-2 rounded-lg {{ Route::currentRouteName() == 'dashboard' ? 'bg-blue-100 text-blue-500' : 'bg-[white]' }} p-[7px_10px]"><a href="#" ><i class="fa-solid fa-house mr-[10px] "></i>Dashboard</a></li>
+                        <li class="hover:bg-blue-100 hover:text-blue-500 rounded-lg mb-2 {{ Route::currentRouteName() == 'product' ? 'bg-blue-100 text-blue-500' : 'bg-[white]' }} p-[7px_10px]"><a href="#" ><i class="fa-solid fa-boxes-stacked mr-[10px] "></i>Products</a></li>
+                        <li class="hover:bg-blue-100 hover:text-blue-500 mb-2 rounded-lg {{ Route::currentRouteName() == 'sales' ? 'bg-blue-100 text-blue-500' : 'bg-[white]' }} p-[7px_10px]"><a href="#"><i class="fa-solid fa-square-poll-vertical mr-[10px]"></i>Sales</a></li>
                     </ul>
                 </nav>
 
-                <div class="hover:bg-blue-400 bg-blue-500 text-[white] absolute left-[10px] right-[10px] bottom-[20px] p-[7px_10px] rounded-lg cursor-pointer text-center"><i class="fa-solid fa-right-from-bracket mr-[10px]"></i>Logout</div>
+                <a href="{{route('logout')}}"><div class="hover:bg-blue-400 bg-blue-500 text-[white] absolute left-[10px] right-[10px] bottom-[20px] p-[7px_10px] rounded-lg cursor-pointer text-center"><i class="fa-solid fa-right-from-bracket mr-[10px]"></i>Logout</div></a>
             </div>
 
 

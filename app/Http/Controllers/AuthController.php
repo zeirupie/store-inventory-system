@@ -30,7 +30,7 @@ class AuthController extends Controller
         ]);
 
         if ($request->password !== $request->verify_password) {
-            return redirect()->back()->withErrors(['password' => 'Passwords do not match.']);
+            return redirect()->back()->withErrors( 'Passwords do not match.');
         }
         
         $qry = Account::insert([
@@ -40,9 +40,32 @@ class AuthController extends Controller
         ]);
 
         if ($qry) {
-            return redirect()->route('view.login')->with('success', 'Account created successfully. Please log in.');
+            return redirect()->route('view.login');
         } else {
-            return redirect()->back()->withErrors(['error' => 'Failed to create account. Please try again.']);
+            return redirect()->back()->withErrors('Failed to create account. Please try again.');
         }
+    }
+
+    public function postLogin(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:6',
+        ]);
+
+        $account = Account::where('email', $request->email)->first();
+
+        if ($account && Hash::check($request->password, $account->password)) {
+            session(['user_id' => $account->id]);
+            return redirect()->route('dashboard');
+        } else {
+            return redirect()->back()->withErrors('Invalid email or password.');
+        }
+    }   
+
+    public function logout()
+    {
+        session()->forget('user_id');
+        return redirect()->route('view.login');
     }
 }

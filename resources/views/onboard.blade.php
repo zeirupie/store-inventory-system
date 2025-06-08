@@ -21,7 +21,7 @@
             <a href="" class="hover:text-blue-500">How it Works</a>
             <a href="" class="hover:text-blue-500">Benefits</a>
             <a href="" class="hover:text-blue-500">Testimonial</a>
-            <a href="" class="hover:bg-blue-400 bg-blue-500 text-[white] p-[7px_20px] rounded-lg">Login</a>
+            <a href="{{route('view.login')}}" class="hover:bg-blue-400 bg-blue-500 text-[white] p-[7px_20px] rounded-lg">Login</a>
 
         </nav>
     </header>
@@ -30,7 +30,7 @@
         <div class="w-[50%] h-[550px] ml-[50px] flex flex-col justify-center pt-[100px]">
             <h1 class="font-[900] text-[2.5em]">Manage Your <span class="text-blue-500">Inventory</span> Effortlessly</h1>
             <p class="text-[1.2em] font-[600] p-[10px_0]">Track your products, monitor your income, and make smarter business decisions with ease.</p>
-            <div class="mt-[10px]"><a href="" class="hover:bg-blue-400  text-[1.2em] bg-blue-500 text-[white] p-[10px_20px] rounded-[25px]">Get Started</a></div>
+            <div class="mt-[10px]"><a href="{{route('view.login')}}" class="hover:bg-blue-400  text-[1.2em] bg-blue-500 text-[white] p-[10px_20px] rounded-[25px]">Get Started</a></div>
         </div>
 
         <img src="human-1.png" class="h-[450px]">

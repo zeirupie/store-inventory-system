@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Login</title>
 
     @vite('resources/css/app.css')
 
@@ -14,7 +14,8 @@
 <body class="bg-gray-100 text-gray-500 text-[1.2em]">
 
     <div>
-        <form action="">
+        <form action="{{route('post.login')}}" method="POST">
+            @csrf
             <div class="flex justify-center items-center h-screen">
                 <div class="bg-white p-8 rounded-lg shadow-md w-[400px]">
                     <h1 class="text-2xl font-bold text-blue-600 mb-6 text-center">Welcome Back!</h1>
@@ -31,7 +32,7 @@
 
                     <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Login</button>
 
-                    <div class="mt-[10px] text-center">Don't have an account yet? <a href="" class="text-blue-500">Register</a></div>
+                    <div class="mt-[10px] text-center">Don't have an account yet? <a href="{{route('view.register')}}" class="text-blue-500">Register</a></div>
                 </div>
             </div>
         </form>

@@ -41,7 +41,7 @@
     
             <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Register</button>
 
-             <div class="mt-[10px] text-center">Already have an account? <a href="" class="text-blue-500">Login</a></div>
+             <div class="mt-[10px] text-center">Already have an account? <a href="{{route('view.login')}}" class="text-blue-500">Login</a></div>
             </div>
         </div>
     </form>
