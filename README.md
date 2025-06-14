@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  <i>Product</i><br>
+  <i>Products</i><br>
   <img src="./public/product.jpg" width="700" alt="Dashboard">
 </p>
 
@@ -50,7 +50,7 @@
 
 - **Backend:** Laravel 12
 - **Frontend:** Blade, Tailwind CSS, SweetAlert2, Chart.js
-- **Database:** MySQL (or compatible)
+- **Database:** MySQL
 - **Build Tools:** Vite, Laravel Mix
 
 ---
