@@ -106,8 +106,11 @@ class StoreViewController extends Controller
 
     public function logs()
     {
-        $logs = Log::where('company_id',session('user_id'))->get();
+        $owner = Account::find(session('user_id'));
+        $owner_name = $owner ? ucfirst($owner->name) : 'Store name';
         
-        return view('store.logs',compact('logs'));
+        $logs = Log::where('company_id',session('user_id'))->get();
+
+        return view('store.logs',compact('owner_name','logs'));
     }
 }
