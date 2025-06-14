@@ -37,6 +37,8 @@ class AuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         if ($qry) {
@@ -57,7 +59,7 @@ class AuthController extends Controller
 
         if ($account && Hash::check($request->password, $account->password)) {
             session(['user_id' => $account->id]);
-            return redirect()->route('dashboard');
+            return redirect()->route('store.dashboard');
         } else {
             return redirect()->back()->withErrors('Invalid email or password.');
         }

@@ -5,3 +5,20 @@ body
     background-color: #F2F2F2;
 }
 
+/* Hide SweetAlert2 accent sidebar line */
+.swal2-popup .swal2-icon {
+    border-left: none !important;
+    box-shadow: none !important;
+}
+.swal2-popup .swal2-icon.swal2-warning {
+    border-left: none !important;
+}
+.swal2-popup .swal2-icon {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+/* Hide scrollbar when SweetAlert2 is open */
+body.swal2-shown {
+    overflow: hidden !important;
+}
+
