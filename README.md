@@ -48,7 +48,7 @@
 
 ## ⚙️ Tech Stack
 
-- **Backend:** Laravel 10+
+- **Backend:** Laravel 12
 - **Frontend:** Blade, Tailwind CSS, SweetAlert2, Chart.js
 - **Database:** MySQL (or compatible)
 - **Build Tools:** Vite, Laravel Mix
