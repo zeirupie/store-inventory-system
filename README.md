@@ -1,7 +1,7 @@
 # Sariventory
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="350" alt="Laravel Logo">
+  <img src="./public/sariventory.jpg" width="350" alt="Laravel Logo">
 </p>
 
 <p align="center">
@@ -14,11 +14,10 @@
 ## 🚀 Features
 
 - **Product & Category Management**: Add, update, and delete products and categories with ease.
-- **Stock Tracking**: Monitor inventory levels and update stock in real time.
+- **Stock Tracking**: Monitor inventory and update stock in real time.
 - **Sales Recording**: Record sold items and automatically update inventory.
 - **Profit & Sales Analytics**: Visualize sales and profit trends with dynamic charts.
 - **Activity Logs**: Keep track of all inventory actions for transparency.
-- **Responsive UI**: Clean, modern interface built with Tailwind CSS and SweetAlert2.
 - **Authentication**: Secure login and registration for store owners.
 
 ---
@@ -26,9 +25,23 @@
 ## 🖥️ Screenshots
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/your-screenshot-url/dashboard.png" width="700" alt="Dashboard Screenshot">
-  <br>
-  <i>Dashboard view with sales and inventory analytics</i>
+  <i>Dashboard</i><br>
+  <img src="./public/dashboard.jpg" width="700" alt="Dashboard">
+</p>
+
+<p align="center">
+  <i>Product</i><br>
+  <img src="./public/product.jpg" width="700" alt="Dashboard">
+</p>
+
+<p align="center">
+  <i>Solds</i><br>
+  <img src="./public/solds.jpg" width="700" alt="Dashboard">
+</p>
+
+<p align="center">
+  <i>Logs</i><br>
+  <img src="./public/logs.jpg" width="700" alt="Dashboard">
 </p>
 
 ---
@@ -85,8 +98,6 @@
     ```sh
     php artisan serve
     ```
-    Visit [http://localhost:8000](http://localhost:8000) in your browser.
-
 ---
 
 ## 📝 Usage
@@ -98,12 +109,6 @@
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome!  
-Please fork the repository and submit a pull request for any improvements or bug fixes.
-
----
 
 ## 📄 License
 

@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="flex items-center justify-center gap-4 mt-[40px]">
-            <button type="button" id="add-row-btn" class="cursor-pointer bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded transition">Add Another Product</button>
+            <button type="button" id="add-row-btn" class="cursor-pointer bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded transition">Multiple Product Listing</button>
             <button type="submit" class="cursor-pointer bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded transition">Add to Sold List</button>
         </div>
     </form>
